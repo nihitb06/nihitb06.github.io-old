@@ -7,14 +7,15 @@ $(document).ready(() => {
         event.preventDefault();
         event.stopPropagation();
 
-        if(name.value !== '' && email.value !== '' && message.value !== '') {
-            try {
-                emailjs.sendForm(SERVICE_ID, TEMPLATE_ID, '#contact-me', USER_ID).then(response => {
-                    alert('Message Response: ' + response['text']);
-                });
-            } catch (e) {
-                console.log(e);
-            }
+        $('.ellipsis').css('display', 'inline-block');
+
+        try {
+            emailjs.sendForm(SERVICE_ID, TEMPLATE_ID, '#contact-me', USER_ID).then(response => {
+                $('.ellipsis').css('display', 'none');
+                alert('Message Response: ' + response['text']);
+            });
+        } catch (e) {
+            console.log(e);
         }
     });
 

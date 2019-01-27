@@ -1,1 +1,1 @@
-{"version":3,"sourceRoot":"","sources":["../../app/sass/about.sass","../../app/sass/partials/_mixins.sass"],"names":[],"mappings":"AAGA;EACE;EACA;;AAEA;EACE;;AAEF;EACE;EACA;ECuCF,uBDtCiB;ECuCjB,oBDvCiB;ECwCjB,eDxCiB","file":"about.css"}
+{"version":3,"sourceRoot":"","sources":["../../app/sass/about.sass","../../app/sass/partials/_mixins.sass"],"names":[],"mappings":"AAGA;EACE;EACA;;AAEA;EACE;;AAEF;EACE;EACA;EC2CF,uBD1CiB;EC2CjB,oBD3CiB;EC4CjB,eD5CiB","file":"about.css"}

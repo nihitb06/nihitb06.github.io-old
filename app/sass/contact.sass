@@ -78,6 +78,37 @@ input[type='submit']
   align-items: center
   align-content: center
 
+.ellipsis
+  display: none
+  position: relative
+  width: 64px
+  height: 64px
+
+  div
+    position: absolute
+    top: 27px
+    width: 11px
+    height: 11px
+    +border-radius(50%)
+    background: $colorSecondary
+    -webkit-animation-timing-function: cubic-bezier(0, 1, 1, 0)
+    -moz-animation-timing-function: cubic-bezier(0, 1, 1, 0)
+    -o-animation-timing-function: cubic-bezier(0, 1, 1, 0)
+    animation-timing-function: cubic-bezier(0, 1, 1, 0)
+
+    &:nth-child(1)
+      left: 6px
+      +animation(ellipsis1 .6s infinite)
+    &:nth-child(2)
+      left: 6px
+      +animation(ellipsis2 .6s infinite)
+    &:nth-child(3)
+      left: 26px
+      +animation(ellipsis2 .6s infinite)
+    &:nth-child(4)
+      left: 45px
+      +animation(ellipsis3 .6s infinite)
+
 #my-contact
   vertical-align: center
 
@@ -87,6 +118,22 @@ input[type='submit']
     a
       color: #000
       font-weight: bold
+
+@keyframes ellipsis1
+  0%
+    transform: scale(0)
+  100%
+    transform: scale(1)
+@keyframes ellipsis2
+  0%
+    transform: translate(0, 0)
+  100%
+    transform: translate(19px, 0)
+@keyframes ellipsis3
+  0%
+    transform: scale(1)
+  100%
+    transform: scale(0)
 
 @media screen and (min-width: $width)
   #my-contact

@@ -38,10 +38,14 @@
   -o-transition-delay: $delay
   transition-delay: $delay
 
-=animation($animation, $time, $interpolator, $repeatCount, $delay, $both)
+=animation1($animation, $time, $interpolator, $repeatCount, $delay, $both)
   -webkit-animation: $animation $time $interpolator $repeatCount $delay $both
   -o-animation: $animation $time $interpolator $repeatCount $delay $both
   animation: $animation $time $interpolator $repeatCount $delay $both
+=animation($animation)
+  -webkit-animation: $animation
+  -o-animation: $animation
+  animation: $animation
 
 =perspective($perspective)
   -webkit-perspective: $perspective

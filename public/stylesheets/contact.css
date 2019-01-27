@@ -93,6 +93,51 @@ input[type=submit]:hover, input[type=submit]:focus {
   align-content: center;
 }
 
+.ellipsis {
+  display: none;
+  position: relative;
+  width: 64px;
+  height: 64px;
+}
+.ellipsis div {
+  position: absolute;
+  top: 27px;
+  width: 11px;
+  height: 11px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  background: #99B998;
+  -webkit-animation-timing-function: cubic-bezier(0, 1, 1, 0);
+  -moz-animation-timing-function: cubic-bezier(0, 1, 1, 0);
+  -o-animation-timing-function: cubic-bezier(0, 1, 1, 0);
+  animation-timing-function: cubic-bezier(0, 1, 1, 0);
+}
+.ellipsis div:nth-child(1) {
+  left: 6px;
+  -webkit-animation: ellipsis1 0.6s infinite;
+  -o-animation: ellipsis1 0.6s infinite;
+  animation: ellipsis1 0.6s infinite;
+}
+.ellipsis div:nth-child(2) {
+  left: 6px;
+  -webkit-animation: ellipsis2 0.6s infinite;
+  -o-animation: ellipsis2 0.6s infinite;
+  animation: ellipsis2 0.6s infinite;
+}
+.ellipsis div:nth-child(3) {
+  left: 26px;
+  -webkit-animation: ellipsis2 0.6s infinite;
+  -o-animation: ellipsis2 0.6s infinite;
+  animation: ellipsis2 0.6s infinite;
+}
+.ellipsis div:nth-child(4) {
+  left: 45px;
+  -webkit-animation: ellipsis3 0.6s infinite;
+  -o-animation: ellipsis3 0.6s infinite;
+  animation: ellipsis3 0.6s infinite;
+}
+
 #my-contact {
   vertical-align: center;
 }
@@ -104,6 +149,30 @@ input[type=submit]:hover, input[type=submit]:focus {
   font-weight: bold;
 }
 
+@keyframes ellipsis1 {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes ellipsis2 {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(19px, 0);
+  }
+}
+@keyframes ellipsis3 {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0);
+  }
+}
 @media screen and (min-width: 768px) {
   #my-contact {
     border-right: 1px solid #99B998;
