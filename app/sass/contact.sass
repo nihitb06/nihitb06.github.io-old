@@ -1,0 +1,100 @@
+@import "partials/mixins"
+@import "partials/colors"
+
+$width: 768px
+
+form
+  text-align: center
+
+label
+  display: block
+  margin-top: 8px
+  letter-spacing: 4px
+  text-align: center
+
+  .label-text
+    color: #9B9B9B
+    cursor: text
+    font-size: 16px
+    line-height: 18px
+    text-transform: uppercase
+    +transform(translateY(-34px))
+    transition: all 0.3s
+
+  input, textarea
+    background-color: transparent
+    border: 0
+    border-bottom: 2px solid $colorSecondary
+    color: black
+    font-size: 24px
+    letter-spacing: -1px
+    outline: 0
+    padding: 5px 20px
+    text-align: center
+    transition: all 0.3s
+    width: 200px
+
+    &:focus
+      max-width: 100%
+      width: 400px
+
+      & + .label-text
+        font-size: 13px
+        +transform(translateY(-74px))
+
+    &:valid + .label-text
+      font-size: 13px
+      +transform(translateY(-74px))
+
+input[type='submit']
+  background-color: $colorPrimary
+  border: 2px solid $colorSecondary
+  border-radius: 27px
+  color: $colorSecondary
+  cursor: pointer
+  font-size: 16px
+  padding: 15px 30px
+  text-transform: uppercase
+  transition: all 200ms
+
+  &:hover, &:focus
+    background-color: $colorSecondary
+    color: $colorPrimary
+    outline: 0
+
+.main
+  padding-top: 2vh
+  padding-bottom: 3vh
+  margin-bottom: 0
+  position: relative
+
+.jumbotron
+  background-color: $colorPrimary
+  +box-shadow(0px 4px 4px 0px rgba(0, 0, 0, .15))
+
+.info-area
+  text-align: center
+  justify-content: center
+  align-items: center
+  align-content: center
+
+#my-contact
+  vertical-align: center
+
+  p
+    font-size: 24px
+
+    a
+      color: #000
+      font-weight: bold
+
+@media screen and (min-width: $width)
+  #my-contact
+    border-right: 1px solid $colorSecondary
+@media screen and (max-width: $width - 2px)
+  form
+    margin-top: 28px
+
+  #my-contact
+    border-bottom: 1px solid $colorSecondary
+    padding-bottom: 32px

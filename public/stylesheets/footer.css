@@ -1,0 +1,298 @@
+html {
+  overflow-x: hidden !important;
+}
+
+.footer {
+  position: relative;
+  display: block;
+  background: #29363B;
+  color: #FDFDFD;
+  bottom: 0;
+  width: 100vw;
+  margin: 0;
+}
+
+.footer-main {
+  font-size: 1.6rem;
+}
+.footer-main a {
+  position: relative;
+  display: inline-block;
+  padding: 0.3em calc(0.3em*1.2);
+  color: white;
+  border: 3px solid transparent;
+  text-decoration: none;
+  letter-spacing: 0.07em;
+  cursor: pointer;
+}
+.footer-main a .text {
+  display: block;
+  font-family: monospace;
+  -webkit-transform: translate3d(0, 0.2em, 0);
+  -moz-transform: translate3d(0, 0.2em, 0);
+  -ms-transform: translate3d(0, 0.2em, 0);
+  -o-transform: translate3d(0, 0.2em, 0);
+  transform: translate3d(0, 0.2em, 0);
+  -webkit-transition: transform 0.4s cubic-bezier(0.2, 0, 0, 1) 0.4s;
+  -moz-transition: transform 0.4s cubic-bezier(0.2, 0, 0, 1) 0.4s;
+  -ms-transition: transform 0.4s cubic-bezier(0.2, 0, 0, 1) 0.4s;
+  -o-transition: transform 0.4s cubic-bezier(0.2, 0, 0, 1) 0.4s;
+  transition: transform 0.4s cubic-bezier(0.2, 0, 0, 1) 0.4s;
+}
+.footer-main a:after {
+  position: absolute;
+  content: "";
+  bottom: -3px;
+  left: calc(0.3em*1.2);
+  right: calc(0.3em*1.2);
+  height: 3px;
+  background: #EA495F;
+  -webkit-transition: transform 0.8s cubic-bezier(1, 0, 0.37, 1) 0.2s right 0.2s cubic-bezier(0.04, 0.48, 0, 1) 0.6s left 0.4s cubic-bezier(0.04, 0.48, 0, 1) 0.6s;
+  -moz-transition: transform 0.8s cubic-bezier(1, 0, 0.37, 1) 0.2s right 0.2s cubic-bezier(0.04, 0.48, 0, 1) 0.6s left 0.4s cubic-bezier(0.04, 0.48, 0, 1) 0.6s;
+  -ms-transition: transform 0.8s cubic-bezier(1, 0, 0.37, 1) 0.2s right 0.2s cubic-bezier(0.04, 0.48, 0, 1) 0.6s left 0.4s cubic-bezier(0.04, 0.48, 0, 1) 0.6s;
+  -o-transition: transform 0.8s cubic-bezier(1, 0, 0.37, 1) 0.2s right 0.2s cubic-bezier(0.04, 0.48, 0, 1) 0.6s left 0.4s cubic-bezier(0.04, 0.48, 0, 1) 0.6s;
+  transition: transform 0.8s cubic-bezier(1, 0, 0.37, 1) 0.2s right 0.2s cubic-bezier(0.04, 0.48, 0, 1) 0.6s left 0.4s cubic-bezier(0.04, 0.48, 0, 1) 0.6s;
+  -webkit-transform-origin: left;
+  -moz-transform-origin: left;
+  -ms-transform-origin: left;
+  -o-transform-origin: left;
+  transform-origin: left;
+}
+.footer-main .line {
+  position: absolute;
+  background: #EA495F;
+}
+.footer-main .line.-right, .footer-main .line.-left {
+  width: 3px;
+  bottom: -3px;
+  top: -3px;
+  -webkit-transform: scale3d(1, 0, 1);
+  -moz-transform: scale3d(1, 0, 1);
+  -ms-transform: scale3d(1, 0, 1);
+  -o-transform: scale3d(1, 0, 1);
+  transform: scale3d(1, 0, 1);
+}
+.footer-main .line.-top, .footer-main .line.-bottom {
+  height: 3px;
+  left: -3px;
+  right: -3px;
+  -webkit-transform: scale3d(0, 1, 1);
+  -moz-transform: scale3d(0, 1, 1);
+  -ms-transform: scale3d(0, 1, 1);
+  -o-transform: scale3d(0, 1, 1);
+  transform: scale3d(0, 1, 1);
+}
+.footer-main .line.-right {
+  right: -3px;
+  -webkit-transition: transform 0.1s cubic-bezier(1, 0, 0.65, 1.01) 0.23s;
+  -moz-transition: transform 0.1s cubic-bezier(1, 0, 0.65, 1.01) 0.23s;
+  -ms-transition: transform 0.1s cubic-bezier(1, 0, 0.65, 1.01) 0.23s;
+  -o-transition: transform 0.1s cubic-bezier(1, 0, 0.65, 1.01) 0.23s;
+  transition: transform 0.1s cubic-bezier(1, 0, 0.65, 1.01) 0.23s;
+  -webkit-transform-origin: top;
+  -moz-transform-origin: top;
+  -ms-transform-origin: top;
+  -o-transform-origin: top;
+  transform-origin: top;
+}
+.footer-main .line.-top {
+  top: -3px;
+  -webkit-transition: transform 0.08s linear 0.43s;
+  -moz-transition: transform 0.08s linear 0.43s;
+  -ms-transition: transform 0.08s linear 0.43s;
+  -o-transition: transform 0.08s linear 0.43s;
+  transition: transform 0.08s linear 0.43s;
+  -webkit-transform-origin: left;
+  -moz-transform-origin: left;
+  -ms-transform-origin: left;
+  -o-transform-origin: left;
+  transform-origin: left;
+}
+.footer-main .line.-left {
+  left: -3px;
+  -webkit-transition: transform 0.08s linear 0.51s;
+  -moz-transition: transform 0.08s linear 0.51s;
+  -ms-transition: transform 0.08s linear 0.51s;
+  -o-transition: transform 0.08s linear 0.51s;
+  transition: transform 0.08s linear 0.51s;
+  -webkit-transform-origin: bottom;
+  -moz-transform-origin: bottom;
+  -ms-transform-origin: bottom;
+  -o-transform-origin: bottom;
+  transform-origin: bottom;
+}
+.footer-main .line.-bottom {
+  bottom: -3px;
+  -webkit-transition: transform 0.3s cubic-bezier(1, 0, 0.65, 1.01);
+  -moz-transition: transform 0.3s cubic-bezier(1, 0, 0.65, 1.01);
+  -ms-transition: transform 0.3s cubic-bezier(1, 0, 0.65, 1.01);
+  -o-transition: transform 0.3s cubic-bezier(1, 0, 0.65, 1.01);
+  transition: transform 0.3s cubic-bezier(1, 0, 0.65, 1.01);
+  -webkit-transform-origin: right;
+  -moz-transform-origin: right;
+  -ms-transform-origin: right;
+  -o-transform-origin: right;
+  transform-origin: right;
+}
+.footer-main a:hover .text, .footer-main a:active .text {
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  -ms-transform: translate3d(0, 0, 0);
+  -o-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+  -webkit-transition: transform 0.6s cubic-bezier(0.2, 0, 0, 1) 0.4s;
+  -moz-transition: transform 0.6s cubic-bezier(0.2, 0, 0, 1) 0.4s;
+  -ms-transition: transform 0.6s cubic-bezier(0.2, 0, 0, 1) 0.4s;
+  -o-transition: transform 0.6s cubic-bezier(0.2, 0, 0, 1) 0.4s;
+  transition: transform 0.6s cubic-bezier(0.2, 0, 0, 1) 0.4s;
+}
+.footer-main a:hover:after, .footer-main a:active:after {
+  -webkit-transform: scale3d(0, 1, 1);
+  -moz-transform: scale3d(0, 1, 1);
+  -ms-transform: scale3d(0, 1, 1);
+  -o-transform: scale3d(0, 1, 1);
+  transform: scale3d(0, 1, 1);
+  right: -3px;
+  left: -3px;
+  -webkit-transform-origin: right;
+  -moz-transform-origin: right;
+  -ms-transform-origin: right;
+  -o-transform-origin: right;
+  transform-origin: right;
+  -webkit-transition: 0.2s cubic-bezier(1, 0, 0.65, 1.01) 0.17s right 0.2s cubic-bezier(1, 0, 0.65, 1.01) left 0s 0.3s;
+  -moz-transition: 0.2s cubic-bezier(1, 0, 0.65, 1.01) 0.17s right 0.2s cubic-bezier(1, 0, 0.65, 1.01) left 0s 0.3s;
+  -ms-transition: 0.2s cubic-bezier(1, 0, 0.65, 1.01) 0.17s right 0.2s cubic-bezier(1, 0, 0.65, 1.01) left 0s 0.3s;
+  -o-transition: 0.2s cubic-bezier(1, 0, 0.65, 1.01) 0.17s right 0.2s cubic-bezier(1, 0, 0.65, 1.01) left 0s 0.3s;
+  transition: 0.2s cubic-bezier(1, 0, 0.65, 1.01) 0.17s right 0.2s cubic-bezier(1, 0, 0.65, 1.01) left 0s 0.3s;
+}
+.footer-main a:hover .line, .footer-main a:active .line {
+  -webkit-transform: scale3d(1, 1, 1);
+  -moz-transform: scale3d(1, 1, 1);
+  -ms-transform: scale3d(1, 1, 1);
+  -o-transform: scale3d(1, 1, 1);
+  transform: scale3d(1, 1, 1);
+}
+.footer-main a:hover .line.-right, .footer-main a:active .line.-right {
+  -webkit-transition: transform 0.1s cubic-bezier(1, 0, 0.65, 1.01) 0.2s;
+  -moz-transition: transform 0.1s cubic-bezier(1, 0, 0.65, 1.01) 0.2s;
+  -ms-transition: transform 0.1s cubic-bezier(1, 0, 0.65, 1.01) 0.2s;
+  -o-transition: transform 0.1s cubic-bezier(1, 0, 0.65, 1.01) 0.2s;
+  transition: transform 0.1s cubic-bezier(1, 0, 0.65, 1.01) 0.2s;
+  -webkit-transform-origin: bottom;
+  -moz-transform-origin: bottom;
+  -ms-transform-origin: bottom;
+  -o-transform-origin: bottom;
+  transform-origin: bottom;
+}
+.footer-main a:hover .line.-top, .footer-main a:active .line.-top {
+  -webkit-transition: transform 0.08s linear 0.4s;
+  -moz-transition: transform 0.08s linear 0.4s;
+  -ms-transition: transform 0.08s linear 0.4s;
+  -o-transition: transform 0.08s linear 0.4s;
+  transition: transform 0.08s linear 0.4s;
+  -webkit-transform-origin: right;
+  -moz-transform-origin: right;
+  -ms-transform-origin: right;
+  -o-transform-origin: right;
+  transform-origin: right;
+}
+.footer-main a:hover .line.-left, .footer-main a:active .line.-left {
+  -webkit-transition: transform 0.08s linear 0.48s;
+  -moz-transition: transform 0.08s linear 0.48s;
+  -ms-transition: transform 0.08s linear 0.48s;
+  -o-transition: transform 0.08s linear 0.48s;
+  transition: transform 0.08s linear 0.48s;
+  -webkit-transform-origin: top;
+  -moz-transform-origin: top;
+  -ms-transform-origin: top;
+  -o-transform-origin: top;
+  transform-origin: top;
+}
+.footer-main a:hover .line.-bottom, .footer-main a:active .line.-bottom {
+  -webkit-transition: transform 0.5s cubic-bezier(0, 0.53, 0.29, 1) 0.56s;
+  -moz-transition: transform 0.5s cubic-bezier(0, 0.53, 0.29, 1) 0.56s;
+  -ms-transition: transform 0.5s cubic-bezier(0, 0.53, 0.29, 1) 0.56s;
+  -o-transition: transform 0.5s cubic-bezier(0, 0.53, 0.29, 1) 0.56s;
+  transition: transform 0.5s cubic-bezier(0, 0.53, 0.29, 1) 0.56s;
+  -webkit-transform-origin: left;
+  -moz-transform-origin: left;
+  -ms-transform-origin: left;
+  -o-transform-origin: left;
+  transform-origin: left;
+}
+
+.social-btn {
+  position: relative;
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  background-color: #ffffff;
+  line-height: 40px;
+  text-align: center;
+  overflow: hidden;
+  -webkit-border-radius: 28%;
+  -moz-border-radius: 28%;
+  border-radius: 28%;
+  opacity: 0.99;
+  cursor: pointer;
+}
+.social-btn:before {
+  content: "";
+  position: absolute;
+  width: 120%;
+  height: 120%;
+  top: 90%;
+  left: -110%;
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+.social-btn:focus:before, .social-btn:hover:before {
+  top: -10%;
+  left: -10%;
+}
+.social-btn:focus .fab, .social-btn:hover .fab {
+  color: #ffffff;
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  -ms-transform: scale(1);
+  -o-transform: scale(1);
+  transform: scale(1);
+}
+.social-btn .fab {
+  vertical-align: middle;
+  -webkit-transform: scale(0.9);
+  -moz-transform: scale(0.9);
+  -ms-transform: scale(0.9);
+  -o-transform: scale(0.9);
+  transform: scale(0.9);
+}
+.social-btn, .social-btn:before, .social-btn .fab {
+  -webkit-transition: all 0.35s cubic-bezier(0.31, -0.105, 0.43, 1.59);
+  -moz-transition: all 0.35s cubic-bezier(0.31, -0.105, 0.43, 1.59);
+  -ms-transition: all 0.35s cubic-bezier(0.31, -0.105, 0.43, 1.59);
+  -o-transition: all 0.35s cubic-bezier(0.31, -0.105, 0.43, 1.59);
+  transition: all 0.35s cubic-bezier(0.31, -0.105, 0.43, 1.59);
+}
+.social-btn.facebook:before {
+  background-color: #3B5998;
+}
+.social-btn.github:before {
+  background-color: #333333;
+}
+.social-btn.linkedin:before {
+  background-color: #0077B5;
+}
+.social-btn .fa-facebook-f {
+  color: #3B5998;
+}
+.social-btn .fa-github {
+  color: #333333;
+}
+.social-btn .fa-linkedin-in {
+  color: #0077B5;
+}
+
+/*# sourceMappingURL=footer.css.map */

@@ -1,0 +1,16 @@
+.main {
+  padding: 5%;
+  text-align: center;
+}
+.main h1 {
+  font-family: "Cinzel Decorative", cursive;
+}
+.main .profile-image {
+  height: 200px;
+  margin: 2em;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  border-radius: 20px;
+}
+
+/*# sourceMappingURL=about.css.map */
