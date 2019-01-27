@@ -56,6 +56,9 @@
   height: 215px;
   padding-top: 10%;
 }
+.card .back .card-content .card-main p {
+  max-height: 180px;
+}
 .card .name {
   font-size: 22px;
   line-height: 28px;

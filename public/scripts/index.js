@@ -125,6 +125,8 @@ $(document).ready(() => {
         `);
     });
 
+    $('.back .card-main p').dotdotdot();
+
     work.forEach((work) => {
         $('.blog-slider__wrp').append(`
             <div class="blog-slider__item swiper-slide">

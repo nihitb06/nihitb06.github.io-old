@@ -13,7 +13,7 @@ html {
 }
 
 .footer-main {
-  font-size: 1.6rem;
+  font-size: 1.6em;
 }
 .footer-main a {
   position: relative;
@@ -293,6 +293,12 @@ html {
 }
 .social-btn .fa-linkedin-in {
   color: #0077B5;
+}
+
+@media (max-width: 576px) {
+  .footer-main {
+    font-size: 1.2em;
+  }
 }
 
 /*# sourceMappingURL=footer.css.map */
