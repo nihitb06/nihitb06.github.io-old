@@ -23,13 +23,14 @@ const education = [
 ];
 const work = [
     {
-        "date": "JUNE, 2018 – JULY, 2018",
-        "organisation": "Defense Research and Development Organisation",
-        "position": "Web Developer",
-        "text": "Did a summer internship at DRDO, Civil Lines, New Delhi for SAG Department. Duties involved building a Web Server using " +
-            "Asp.NET, C# and Elasticsearch DB as base. Also involved writing Python scripts for integrating with other parts of the existing" +
-            " internal framework.",
-        "tech": ["HTML", "CSS", "Javascript", "C#", "Asp.NET", "Elasticsearch", "Python"]
+        "date": "JUNE, 2019 – JULY, 2019",
+        "organisation": "Tata Power DDL",
+        "position": "Business Analytics Intern",
+        "text": "Worked as a Summer Intern in the Data Analytics wing of Tata Power DDL. " +
+            "Built and deployed an application for implementing fuzzy searching of consumers on a database of over 2000 existing " +
+            "records. Also completed a Natural Language Processing project on Social Media Data for the company.",
+        "tech": ["HTML", "CSS", "Javascript", "Node JS", "Elasticsearch",
+            "Python", "Support Vector Machines", "Natural Language Processing"]
     },
     {
         "date": "SEPTEMBER, 2018 – OCTOBER, 2018",
@@ -39,6 +40,15 @@ const work = [
             "Developed an Amortization Calculator android app" +
             "which also supported a server-side database for users and their previous data.",
         "tech": ["Kotlin", "Java", "XML", "Android SDK"]
+    },
+    {
+        "date": "JUNE, 2018 – JULY, 2018",
+        "organisation": "Defense Research and Development Organisation",
+        "position": "Web Developer",
+        "text": "Did a summer internship at DRDO, Civil Lines, New Delhi for SAG Department. Duties involved building a Web Server using " +
+            "Asp.NET, C# and Elasticsearch DB as base. Also involved writing Python scripts for integrating with other parts of the existing" +
+            " internal framework.",
+        "tech": ["HTML", "CSS", "Javascript", "C#", "Asp.NET", "Elasticsearch", "Python"]
     }
 ];
 

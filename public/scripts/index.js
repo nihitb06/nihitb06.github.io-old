@@ -46,13 +46,14 @@ const projects = [
 ];
 const work = [
     {
-        "date": "JUNE, 2018 – JULY, 2018",
-        "organisation": "Defense Research and Development Organisation",
-        "image": "https://upload.wikimedia.org/wikipedia/en/thumb/3/3e/DRDO-logo.png/220px-DRDO-logo.png",
-        "text": "Did a summer internship at DRDO, Civil Lines, New Delhi for SAG Department. Duties involved building a Web Server using " +
-            "Asp.NET, C# and Elasticsearch DB as base. Also involved writing Python scripts for integrating with other parts of the existing" +
-            " internal framework.",
-        "link": "https://www.drdo.gov.in/drdo/labs1/SAG/English/indexnew.jsp?pg=homepage.jsp"
+        "date": "JUNE, 2019 – JULY, 2019",
+        "organisation": "Tata Power DDL",
+        "image": "public/assets/tpddl.jpg",
+        "text": "Worked as a Summer Intern in the Data Analytics wing of Tata Power DDL. " +
+            "Built and deployed an application for implementing fuzzy searching of consumers on a database of over 2000 existing " +
+            "records. Also completed a Natural Language Processing project on Social Media Data for the company. " +
+            "Trained a classification model on thousands of data points after intense pre-processing.",
+        "link": "https://www.tatapower-ddl.com/corporate/our-company/company-profile"
     },
     {
         "date": "SEPTEMBER, 2018 – OCTOBER, 2018",
@@ -62,6 +63,15 @@ const work = [
             "Developed an Amortization Calculator android app" +
             "which also supported a server-side database for users and their previous data.",
         "link": "https://in.linkedin.com/company/initqube"
+    },
+    {
+        "date": "JUNE, 2018 – JULY, 2018",
+        "organisation": "Defense Research and Development Organisation",
+        "image": "public/assets/drdo.jpg",
+        "text": "Did a summer internship at DRDO, Civil Lines, New Delhi for SAG Department. Duties involved building a Web Server using " +
+            "Asp.NET, C# and Elasticsearch DB as base. Also involved writing Python scripts for integrating with other parts of the existing" +
+            " internal framework.",
+        "link": "https://www.drdo.gov.in/drdo/labs1/SAG/English/indexnew.jsp?pg=homepage.jsp"
     }
 ];
 
